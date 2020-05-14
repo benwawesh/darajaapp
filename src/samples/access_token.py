@@ -1,6 +1,6 @@
 import requests
 from requests.auth import HTTPBasicAuth
-import important
+from src.samples import important
 
 
 def generate_access_token():

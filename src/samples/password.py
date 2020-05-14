@@ -1,6 +1,6 @@
 import base64
-from dateformat import date_generator
-import important
+from src.samples.dateformat import date_generator
+from src.samples import important
 
 
 def password_generator():

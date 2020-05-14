@@ -1,8 +1,8 @@
 import requests
-from access_token import generate_access_token
-from password import  password_generator
-import important
-from dateformat import  date_generator
+from src.samples.access_token import generate_access_token
+from src.samples.password import  password_generator
+from src.samples import important
+from src.samples.dateformat import  date_generator
 
 access_token = generate_access_token()
 api_url = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"

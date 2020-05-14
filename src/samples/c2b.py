@@ -1,7 +1,7 @@
 import requests
-import important
+from src.samples import important
 from requests.auth import HTTPBasicAuth
-from access_token import generate_access_token
+from src.samples.access_token import generate_access_token
 
 
 consumer_key = important.consumer_key
@@ -31,7 +31,7 @@ def simulate_c2b_transaction():
     my_access_token = generate_access_token()
     api_url = "https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate"
     headers = {"Authorization": "Bearer %s" % my_access_token}
-    request = { "ShortCode":important.shortcode,
+    request = { "ShortCode": important.shortcode,
         "CommandID":"CustomerPayBillOnline",
         "Amount":"1",
         "Msisdn": important.test_msisdn,
